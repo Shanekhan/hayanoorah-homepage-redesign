@@ -1,0 +1,77 @@
+.bags {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    background: url("../../assets/bkimg1.jpg") center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+.bags::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better text readability */
+}
+
+/* ✅ Image & Text Container */
+.bags-content {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* ✅ Ensure image is above, text below */
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    height: auto; /* ✅ Allow content to take proper height */
+    justify-content: flex-end; /* ✅ Push content to bottom */
+    padding-bottom: 20px; /* ✅ Prevent text from cutting off */
+}
+/* ✅ Bigger Image - Centered */
+.featured-bag {
+    width: 350px; /* Increase size */
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ✅ Text & Button Section - Below Image */
+.text-container {
+    position: relative;
+    max-width: 400px;
+    margin-top:20px;
+}
+
+/* Heading Styling */
+.text-container h1 {
+    font-size: 2.5rem;
+    color: #E8D8C4;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 12px;
+}
+
+/* Button Styling */
+.view-collection {
+    padding: 12px 25px;
+    background: #A08770;
+    color: white;
+    border: 2px solid #A08770;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.view-collection:hover {
+    background: #CC9966;
+    border-color: #CC9966;
+    transform: scale(1.05);
+}

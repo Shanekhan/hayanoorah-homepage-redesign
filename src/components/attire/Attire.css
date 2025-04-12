@@ -1,0 +1,65 @@
+.attire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Text left, image right */
+    height: 100vh;
+    background: white;
+    padding: 5%;
+}
+
+/* ✅ Left Side - Text */
+.attire-text {
+    max-width: 50%; /* Taake text aur image equal space lein */
+    text-align: left;
+}
+
+/* ✅ Right Side - Attire Full Height Image */
+.attire-img {
+    position: absolute;  /* Taake yeh bilkul right corner pe aa jaye */
+    right: 0; /* Image ko right side chipka diya */
+    width: 50vw; /* Half screen cover kare */
+    height: 100vh; /* Poora section cover kare */
+    background: url("../../assets/attire.jpg") center/cover no-repeat;
+}
+.attire-text h6 {
+    font-size: 1rem;
+    color: #A08770; /* Warm Taupe for subtle elegance */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.attire-text h1 {
+    font-size: 2.8rem;
+    font-family: "serif";
+    color: #DBA9A8; /* Dusty Rose for a warm, stylish look */
+    margin-bottom: 15px;
+}
+
+.attire-text p {
+    font-size: 1rem;
+    color: #A08770;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ✅ Button */
+.shop-now {
+    padding: 12px 25px;
+    background: #DBA9A8; /* Dusty Rose for CTA */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.shop-now:hover {
+    background: #A08770; /* Warm Taupe on hover */
+}
+
+
+

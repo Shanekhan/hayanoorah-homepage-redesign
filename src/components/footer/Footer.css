@@ -1,0 +1,112 @@
+.footer {
+    background-color: #FFFFF0; /* Ivory */
+    color: #A08770; /* Warm Taupe */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer h3 {
+    color: #DBA9A8; /* Dusty Rose */
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: #A08770; /* Warm Taupe */
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #DBA9A8; /* Dusty Rose */
+  }
+  
+  .newsletter p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #A08770; /* Warm Taupe Border */
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .newsletter-input button {
+    background-color: #DBA9A8; /* Dusty Rose */
+    color: #FFFFF0; /* Ivory */
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter-input button:hover {
+    background-color: #A08770; /* Warm Taupe */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #A08770; /* Warm Taupe */
+    padding-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #A08770; /* Warm Taupe */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #DBA9A8; /* Dusty Rose */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .newsletter-input {
+      flex-direction: column;
+    }
+  
+    .newsletter-input input {
+      margin-bottom: 10px;
+    }
+  }
+  

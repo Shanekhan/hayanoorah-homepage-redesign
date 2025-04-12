@@ -1,0 +1,63 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #f3f2f3;
+}
+
+.logo img {
+  width: 155px;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(500%) hue-rotate(15deg);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin-right: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #A08770;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #DBA9A8;
+}
+
+/* Icons (Search & Cart) */
+.nav-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-icons .icon {
+  font-size: 22px;
+  color: #A08770;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icons .icon:hover {
+  color: #DBA9A8;
+}
+
+.toggle-mode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #A08770; /* Same as other icons */
+    transition: color 0.3s ease;
+}
+
+.toggle-mode:hover {
+    color: #DBA9A8;
+}
